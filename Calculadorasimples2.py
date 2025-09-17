@@ -1,0 +1,39 @@
+print('=== Calculadora Simples ===')
+
+print('Olá, vamos calcular')
+
+#Numeros para serem colocados 
+number1 = int(input('Digite um Numero: '))
+number2 = int(input('Digite mais um Numero: '))
+
+#Operações 
+print('Escolha a Operação: ')
+print('+ Para Soma')
+print('- Para Menos')
+print('* Para Multiplicação')
+print('/ Para Divisão')
+
+operação = input('DIgite a oepração que você deseja fazer: ')
+
+
+#Formula da operação 
+if operação  == '+':
+    resultado = number1 + number2
+    print(f"{number1} + {number2} = {resultado}")
+
+elif operação == '-':
+    resultado = number1 - number2
+    print(f"{number1} - {number2} = {resultado}")
+
+elif operação == '*':
+    resultado = number1 * number2
+    print(f"{number1} * {number2} = {resultado}")
+
+elif operação == '/':
+    if number2 != 0:
+        resultado = number1 / number2
+        print(f"{number1} / {number2} = {resultado}")
+    else:
+        print('Erro: Não é possível dividir por zero!!')
+else:
+    print('Operação Inválida!!')
